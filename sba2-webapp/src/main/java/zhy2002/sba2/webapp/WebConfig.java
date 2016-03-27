@@ -10,7 +10,7 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
  * This is the main Spring configuration class.
  */
 @SpringBootApplication(scanBasePackages = "zhy2002.sba2")
-public class WebappConfig extends SpringBootServletInitializer {
+public class WebConfig extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
@@ -18,6 +18,6 @@ public class WebappConfig extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) {
-        new SpringApplication(WebappConfig.class).run(args);
+        new SpringApplication(WebConfig.class).run(args);
     }
 }
