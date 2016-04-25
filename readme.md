@@ -3,10 +3,10 @@
 # A sample application using Spring Boot and Angular2
 
 ## How to run
-* In IntelliJ Idea - Create 'Run Configuration' Tomcat -> Local Server with sba2-webapp:war exploded.
+* In IntelliJ Idea - Create 'Run Configuration' Tomcat -> Local Server with sba2-web:war exploded.
 
 ## Configure Dev Environment
-* Add Spring facet in sba2-webapp module to gain better Spring support in IntelliJ.
+* Add Spring facet in sba2-web module to gain better Spring support in IntelliJ.
 * IntelliJ Tomcat Run Configuration: On update action - Redeploy; On frame deactivation - Update classes and resources.
 
 ## Conventions

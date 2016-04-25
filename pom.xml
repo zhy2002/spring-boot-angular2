@@ -17,7 +17,10 @@
     </parent>
 
     <modules>
-        <module>sba2-webapp</module>
+        <module>sba2-web</module>
+        <module>sba2-domain</module>
+        <module>sba2-atomic</module>
+        <module>sba2-atomic-custom</module>
     </modules>
 
     <properties>
@@ -28,6 +31,17 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>zhy2002</groupId>
+                <artifactId>sba2-atomic</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>zhy2002</groupId>
+                <artifactId>sba2-atomic-custom</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -38,7 +52,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>

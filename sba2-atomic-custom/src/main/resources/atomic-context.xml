@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="defaultBoolSerializer" class="zhy2002.sba2.atomic.serializer.BoolValueSerializer" />
+    <bean id="defaultNumberSerializer" class="zhy2002.sba2.atomic.serializer.NumberValueSerializer" />
+    <bean id="defaultTextSerializer" class="zhy2002.sba2.atomic.serializer.TextValueSerializer" />
+    <bean id="defaultTimeSerializer" class="zhy2002.sba2.atomic.serializer.TimeValueSerializer" />
+    <bean id="defaultObjectIdSerializer" class="zhy2002.sba2.atomic.serializer.ObjectIdValueSerializer" />
+
+    <bean id="boolType" class="zhy2002.sba2.atomic.BoolAtomicType">
+        <constructor-arg ref="defaultBoolSerializer" />
+    </bean>
+
+    <bean id="numberType" class="zhy2002.sba2.atomic.NumberAtomicType">
+        <constructor-arg ref="defaultNumberSerializer" />
+    </bean>
+
+    <bean id="textType" class="zhy2002.sba2.atomic.TextAtomicType">
+        <constructor-arg ref="defaultTextSerializer" />
+    </bean>
+
+    <bean id="timeType" class="zhy2002.sba2.atomic.TimeAtomicType">
+        <constructor-arg ref="defaultTimeSerializer" />
+    </bean>
+
+    <bean id="objectIdType" class="zhy2002.sba2.atomic.ObjectIdAtomicType">
+        <constructor-arg ref="defaultObjectIdSerializer" />
+    </bean>
+</beans>
