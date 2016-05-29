@@ -9,23 +9,21 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sba2-domain</artifactId>
+    <artifactId>sba2-core</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>zhy2002</groupId>
-            <artifactId>sba2-atomic</artifactId>
+            <artifactId>sba2-domain</artifactId>
         </dependency>
-
         <dependency>
             <groupId>zhy2002</groupId>
-            <artifactId>sba2-atomic-custom</artifactId>
-            <scope>runtime</scope>
+            <artifactId>sba2-dto</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <groupId>zhy2002</groupId>
+            <artifactId>sba2-workflow</artifactId>
         </dependency>
     </dependencies>
+
 </project>

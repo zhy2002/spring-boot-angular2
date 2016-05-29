@@ -1,4 +1,4 @@
-package zhy2002.sba2.domain;
+package zhy2002.sba2.domain.data;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
